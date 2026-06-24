@@ -1,0 +1,337 @@
+/* ============================================================
+   ATIVIDADE: Estilizando com CSS — Ficha Técnica do Personagem
+   Aluno(a):
+   Turma:
+   Data:
+   ============================================================ */
+
+
+
+
+/* ============================================================
+   DICA: Como selecionar elementos no CSS
+
+
+   Por TAG:       h1 { }          (aplica em todos os h1)
+   Por ID:        #nome-id { }    (aplica em UM elemento específico)
+   Por CLASSE:    .nome-classe { }(aplica em vários elementos de uma vez)
+   ============================================================ */
+
+
+
+
+/* ----------------------------------------------------------
+   1. ESTILOS GERAIS DA PÁGINA
+   Aqui você configura o visual padrão do site inteiro.
+   Sugestão: defina a cor de fundo, a fonte padrão e a cor do texto.
+   ---------------------------------------------------------- */
+
+
+body {
+ font-family: Arial, sans-serif;
+ background-color: #f0f0f0;
+ color: #333;
+
+}
+
+
+
+
+/* ----------------------------------------------------------
+   2. CABEÇALHO  →  #cabecalho
+   A área do topo com o nome e título do personagem.
+   ---------------------------------------------------------- */
+
+
+#cabecalho {
+font-family: 'Georgia', serif;
+
+}
+
+
+#nome-personagem {
+font-size: 2.5em;
+
+}
+
+
+#titulo-personagem {
+font-size: 1.5em;
+
+}
+
+
+
+
+/* ----------------------------------------------------------
+   3. CONTEÚDO PRINCIPAL  →  #conteudo-principal
+   O bloco que envolve tudo entre o cabeçalho e o rodapé.
+   ---------------------------------------------------------- */
+
+
+#conteudo-principal {
+font-family: 'Verdana', sans-serif;
+
+}
+
+
+
+
+/* ----------------------------------------------------------
+   4. SEÇÃO DE APRESENTAÇÃO  →  #secao-apresentacao
+   Imagem do personagem + texto de descrição lado a lado.
+   ---------------------------------------------------------- */
+
+
+#secao-apresentacao {
+border: 1px solid #ccc;
+
+}
+
+
+#bloco-imagem {
+border: 1px solid #ccc;
+
+}
+
+
+#imagem-personagem {
+border: 1px solid #ccc;
+
+}
+
+
+.legenda {
+border: 1px solid #ccc;
+
+}
+
+
+#bloco-descricao {
+font-family: 'Tahoma', sans-serif;
+
+}
+
+
+
+
+/* ----------------------------------------------------------
+   5. TÍTULOS DE SEÇÃO  →  .titulo-secao
+   Usados em todas as seções da página.
+   ---------------------------------------------------------- */
+
+
+.titulo-secao {
+width: 100%;
+
+}
+
+
+
+
+/* ----------------------------------------------------------
+   6. TEXTOS DE DESCRIÇÃO  →  .texto-descricao
+   Parágrafos dentro do bloco de descrição do personagem.
+   ---------------------------------------------------------- */
+
+
+.texto-descricao {
+font-family: 'Verdana', sans-serif;
+
+}
+
+
+
+
+/* ----------------------------------------------------------
+   7. SEÇÃO DE ATRIBUTOS  →  #secao-atributos
+   A grade com os cards de atributo (ataque, defesa, etc.).
+   ---------------------------------------------------------- */
+
+
+#secao-atributos {
+font-family: 'Verdana', sans-serif;
+
+}
+
+
+#grade-atributos {
+font-family: 'Verdana', sans-serif;
+
+}
+
+
+/* Cada card de atributo individualmente */
+.card-atributo {
+font-family: 'Verdana', sans-serif;
+
+}
+
+
+.icone-atributo {
+font-family: 'Verdana', sans-serif; 
+
+}
+
+
+.nome-atributo {
+font-family: 'Verdana', sans-serif;
+
+}
+
+
+.valor-atributo {
+font-family: 'Verdana', sans-serif;
+
+}
+
+
+
+
+/* ----------------------------------------------------------
+   8. SEÇÃO DE HABILIDADES  →  #secao-habilidades
+   Lista de habilidades com imagem e descrição.
+   ---------------------------------------------------------- */
+
+
+#secao-habilidades {
+font-family: 'Verdana', sans-serif; 
+
+}
+
+
+#lista-habilidades {
+font-family: 'Verdana', sans-serif;
+
+}
+
+
+/* Cada card de habilidade */
+.card-habilidade {
+border: 1px solid #ccc;
+
+}
+
+
+.imagem-habilidade {
+border-radius: 8px;
+
+}
+
+
+.info-habilidade {
+font-family: 'Verdana', sans-serif;
+
+}
+
+
+.nome-habilidade {
+font-family: 'Verdana', sans-serif;
+
+}
+
+
+.tipo-habilidade {
+font-family: 'Verdana', sans-serif; 
+
+}
+
+
+.descricao-habilidade {
+font-family: 'Verdana', sans-serif;
+
+}
+
+
+
+
+/* ----------------------------------------------------------
+   9. SEÇÃO DE CURIOSIDADES  →  #secao-curiosidades
+   Lista com fatos sobre o personagem.
+   ---------------------------------------------------------- */
+
+
+#secao-curiosidades {
+font-family: 'Verdana', sans-serif;
+
+}
+
+
+#lista-curiosidades {
+font-family: 'Verdana', sans-serif;
+
+}
+
+
+.item-curiosidade {
+font-family: 'Verdana', sans-serif;
+
+}
+
+
+
+
+/* ----------------------------------------------------------
+   10. SEÇÃO DE FRASES  →  #secao-frases
+   A frase marcante do personagem em destaque.
+   ---------------------------------------------------------- */
+
+
+#secao-frases {
+    font-family: 'Verdana', sans-serif;
+
+}
+
+
+#frase-personagem {
+font-family: 'Georgia', serif;
+
+}
+
+
+#autor-frase {
+font-family: 'Georgia', serif;
+
+}
+
+
+
+
+/* ----------------------------------------------------------
+   11. RODAPÉ  →  #rodape
+   Área inferior com os créditos da ficha.
+   ---------------------------------------------------------- */
+
+
+#rodape {
+font-family: 'Verdana', sans-serif;
+
+}
+
+
+#creditos {
+font-family: 'Verdana', sans-serif;
+
+}
+
+
+#nome-aluno {
+font-family: 'Verdana', sans-serif;
+
+}
+
+
+#ano {
+font-family: 'Verdana', sans-serif;
+
+}
+
+
+
+
+/* ----------------------------------------------------------
+   ÁREA LIVRE
+   Quer adicionar mais estilos? Use este espaço!
+   ---------------------------------------------------------- */
+
+
