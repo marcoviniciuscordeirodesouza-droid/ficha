@@ -29,7 +29,7 @@
 
 body {
  font-family: Arial, sans-serif;
- background-color: #f0f0f0;
+ background-color: #d9ce9b;
  color: #333;
 
 }
@@ -45,19 +45,25 @@ body {
 
 #cabecalho {
 font-family: 'Georgia', serif;
-
+border: 4px dotted #ff6161;
 }
 
 
 #nome-personagem {
 font-size: 2.5em;
-
+color: #af3434;
+margin: 40px 0;
+padding: 20px;
+background: rgb(255, 255, 255);
+border-left: 5px solid #333;
 }
 
 
 #titulo-personagem {
 font-size: 1.5em;
-
+padding: 10px;
+background-color: #fffc61;
+transform: rotate(-1deg);
 }
 
 
@@ -70,7 +76,7 @@ font-size: 1.5em;
 
 
 #conteudo-principal {
-font-family: 'Verdana', sans-serif;
+font-family: 'Time new Roman', sans-serif;
 
 }
 
@@ -84,32 +90,46 @@ font-family: 'Verdana', sans-serif;
 
 
 #secao-apresentacao {
-border: 1px solid #ccc;
-
+border: px;
 }
 
 
 #bloco-imagem {
-border: 1px solid #ccc;
-
+   border: 0;
 }
 
 
 #imagem-personagem {
-border: 1px solid #ccc;
+border: 4px solid #e8dcc0;
+width: 591px;
+height: 350px;
+border-radius: 10px;
+box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.25),
+        0 0 0 1px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+filter: contrast(1.25) brightness(0.98);
+cursor: pointer;
+}
 
+#imagem-personagem:hover {
+  transform: rotate(1deg) scale(0.95);
 }
 
 
 .legenda {
-border: 1px solid #ccc;
-
+font-family: 'Time new Roman', serif;
+font-size: 0.9em;
+border: 3px groove #ff6161;
+border-radius: 5px;
+padding: 5px;
+background-color: #ffc061;
 }
 
 
 #bloco-descricao {
-font-family: 'Tahoma', sans-serif;
-
+font-family: 'Time new Roman', serif;
+font-size: 1.1em;
 }
 
 
@@ -123,7 +143,11 @@ font-family: 'Tahoma', sans-serif;
 
 .titulo-secao {
 width: 100%;
-
+color: #af3434;
+margin: 10px 0;
+padding: px;
+background: rgb(255, 255, 255);
+border-left: 4px solid #333;
 }
 
 
@@ -136,8 +160,8 @@ width: 100%;
 
 
 .texto-descricao {
-font-family: 'Verdana', sans-serif;
-
+font-family: 'New Times Roman ', serif;
+border: 4px dotted #ff6161;
 }
 
 
@@ -150,39 +174,82 @@ font-family: 'Verdana', sans-serif;
 
 
 #secao-atributos {
-font-family: 'Verdana', sans-serif;
-
+font-family: 'New Times Roman', serif;
 }
 
 
 #grade-atributos {
-font-family: 'Verdana', sans-serif;
-
+font-family: 'Time new Roman', serif;
+border: 4px dotted #ff6161;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+gap: 15px;
+padding: 20px;
 }
 
 
 /* Cada card de atributo individualmente */
 .card-atributo {
-font-family: 'Verdana', sans-serif;
+font-family: 'Time new Roman', serif;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 20px;
+border: 2px solid #ff6161;
+border-radius: 8px;
+background-color: #fff9e6;
+transition: all 0.3s ease;
+cursor: pointer;
+}
 
+.card-atributo:hover {
+transform: scale(1.05) translateY(-5px);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+background-color: #ffe6b3;
 }
 
 
 .icone-atributo {
-font-family: 'Verdana', sans-serif; 
+font-family: 'Time new Roman', serif; 
+font-size: 2em;
+transition: transform 0.3s ease;
+}
 
+.card-atributo:hover .icone-atributo {
+transform: scale(1.3) rotate(10deg);
 }
 
 
 .nome-atributo {
-font-family: 'Verdana', sans-serif;
+font-size: 1.2em;
+font-family: 'Time new Roman', serif;
+margin: 3px 0;
+padding: 8px;
+background: rgb(255, 255, 255);
+border-left: 5px solid #333;
+border-radius: 0 6px 6px 0;
+font-weight: bold;
+color: #338ab3;
+transition: all 0.3s ease;
+}
 
+.nome-atributo:hover {
+transform: scale(1.1);
+color: #af3434;
 }
 
 
 .valor-atributo {
-font-family: 'Verdana', sans-serif;
+font-family: 'new Times Roman', serif;
+font-weight: bold;
+font-size: 1.5em;
+color: #af3434;
+transition: all 0.3s ease;
+}
 
+.card-atributo:hover .valor-atributo {
+font-size: 1.8em;
 }
 
 
@@ -195,13 +262,13 @@ font-family: 'Verdana', sans-serif;
 
 
 #secao-habilidades {
-font-family: 'Verdana', sans-serif; 
+font-family: 'new Times Roman', serif;
 
 }
 
 
 #lista-habilidades {
-font-family: 'Verdana', sans-serif;
+font-family: 'new Times Roman', serif;
 
 }
 
@@ -214,31 +281,31 @@ border: 1px solid #ccc;
 
 
 .imagem-habilidade {
-border-radius: 100px;
-
+border-radius: 30px;
+width: 300px;
+height: 270px;
 }
 
 
 .info-habilidade {
-font-family: 'Verdana', sans-serif;
+font-family: 'new Times Roman', serif;
 
 }
 
 
 .nome-habilidade {
-font-family: 'Verdana', sans-serif;
-
+font-family: 'new Times Roman', serif;
+color: #972f2f
 }
 
 
 .tipo-habilidade {
-font-family: 'Verdana', sans-serif; 
-
+font-family: 'new Times Roman', serif; 
 }
 
 
 .descricao-habilidade {
-font-family: 'Verdana', sans-serif;
+font-family: 'new Times Roman', serif;
 
 }
 
@@ -252,19 +319,19 @@ font-family: 'Verdana', sans-serif;
 
 
 #secao-curiosidades {
-font-family: 'Verdana', sans-serif;
+font-family: 'new Times Roman', serif;
 
 }
 
 
 #lista-curiosidades {
-font-family: 'Verdana', sans-serif;
+font-family: 'new Times Roman', serif;
 
 }
 
 
 .item-curiosidade {
-font-family: 'Verdana', sans-serif;
+font-family: 'new Times Roman', serif;
 
 }
 
@@ -278,19 +345,19 @@ font-family: 'Verdana', sans-serif;
 
 
 #secao-frases {
-    font-family: 'Verdana', sans-serif;
+    font-family: 'new Times Roman', serif;
 
 }
 
 
 #frase-personagem {
-font-family: 'Georgia', serif;
+font-family: 'new Times Roman', serif;
 
 }
 
 
 #autor-frase {
-font-family: 'Georgia', serif;
+font-family: 'new Times Roman', serif;
 
 }
 
@@ -304,24 +371,24 @@ font-family: 'Georgia', serif;
 
 
 #rodape {
-font-family: 'Georgia', serif;
+font-family: 'new Times Roman', serif;
 
 }
 
 
 #creditos {
-font-family: 'Georgia', serif;
+font-family: 'new Times Roman', serif;
 }
 
 
 #nome-aluno {
-font-family: 'Georgia', serif;
+font-family: 'new Times Roman', serif;
 
 }
 
 
 #ano {
-font-family: 'Georgia', serif;
+font-family: 'new Times Roman', serif;
 
 }
 
