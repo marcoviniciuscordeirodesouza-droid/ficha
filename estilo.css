@@ -335,7 +335,7 @@ color: #af3434;
 
 .descricao-habilidade {
 font-family: 'new Times Roman', serif;
-font-size: 20px;
+font-size: 1.1em;
 cursor: pointer;
 transition: transform 0.3s ease;
 }
@@ -354,22 +354,24 @@ transition: transform 0.3s ease;
 
 #secao-curiosidades {
 font-family: 'new Times Roman', serif;
-
+border: 4px dotted #ff6161;
+border-radius: 10px;
 }
 
 
 #lista-curiosidades {
 font-family: 'new Times Roman', serif;
-
+font-size: 1.1em;
 }
-
 
 .item-curiosidade {
 font-family: 'new Times Roman', serif;
-
+transition: transform 0.3s ease
 }
 
-
+.item-curiosidade:hover {
+ transform: translateX(10px);
+}
 
 
 /* ----------------------------------------------------------
@@ -380,19 +382,26 @@ font-family: 'new Times Roman', serif;
 
 #secao-frases {
     font-family: 'new Times Roman', serif;
-
+   border: 4px dotted #ff6161;
+   border-radius: 10px;
 }
 
 
 #frase-personagem {
 font-family: 'new Times Roman', serif;
-
+font-weight: bold;
+font-size: 1.5em;
+color: #af3434;
+padding: 10px;
+background-color: #fffc61;
 }
 
 
 #autor-frase {
 font-family: 'new Times Roman', serif;
-
+font-style: italic;
+font-size: 1.4em;
+font-weight: bold;
 }
 
 
@@ -412,18 +421,21 @@ font-family: 'new Times Roman', serif;
 
 #creditos {
 font-family: 'new Times Roman', serif;
+font-size: 1.2em;
 }
 
 
 #nome-aluno {
 font-family: 'new Times Roman', serif;
-
+font-weight: bold;
+font-size: 1.2em;
 }
 
 
 #ano {
 font-family: 'new Times Roman', serif;
-
+font-style: italic;
+font-size: 1.3em;
 }
 
 
